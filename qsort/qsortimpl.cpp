@@ -27,3 +27,27 @@ void _qsort(int* p, int begin, int end){
 		_qsort(p, pivotpos + 1, end);
 
 }
+
+//TODO: rewrite by my self
+void RealQsort::qsort(int* vec, int begin,int end){
+	if (!vec)
+		return;
+	if (begin < end){
+		int l = begin;
+		int r = end;
+		int pivot = vec[l];
+		while (l < r){
+			while (l < r && vec[r] >= pivot)
+				r--;
+			if (l < r)
+			    swap(vec[r], vec[l]);
+			while (l < r && vec[l] < pivot)
+				l++;
+			if (l < r)
+			    swap(vec[r], vec[l]);
+		}
+		vec[l] = pivot;
+		qsort(vec,begin,l - 1);
+		qsort(vec, r + 1, end);
+	}
+}
