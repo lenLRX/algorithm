@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algorithm", "algorithm\algo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qsort", "qsort\qsort.vcxproj", "{9EF113B4-7059-4733-AF26-03325591128B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "heap", "heap\heap.vcxproj", "{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{9EF113B4-7059-4733-AF26-03325591128B}.Debug|Win32.Build.0 = Debug|Win32
 		{9EF113B4-7059-4733-AF26-03325591128B}.Release|Win32.ActiveCfg = Release|Win32
 		{9EF113B4-7059-4733-AF26-03325591128B}.Release|Win32.Build.0 = Release|Win32
+		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Debug|Win32.Build.0 = Debug|Win32
+		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Release|Win32.ActiveCfg = Release|Win32
+		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
