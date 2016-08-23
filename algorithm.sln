@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algorithm", "algorithm\algorithm.vcxproj", "{564AF022-D41F-4679-8F7A-779931BFECF6}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qsort", "qsort\qsort.vcxproj", "{9EF113B4-7059-4733-AF26-03325591128B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "heap", "heap\heap.vcxproj", "{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kmp", "kmp\kmp.vcxproj", "{FC122130-3ECA-4D18-91EB-DA42575C7A4C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LCS", "LCS\LCS.vcxproj", "{8C3E0356-61E6-4610-8FA3-0BFEF585A17B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Greedy-activity-selector", "Greedy-activity-selector\Greedy-activity-selector.vcxproj", "{BA163293-A239-49FB-A1DC-12FD02A04E49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tencent-MoveCapital", "Tencent-MoveCapital\Tencent-MoveCapital.vcxproj", "{2BC84FDB-CD60-46A9-A8A0-D2AE541D1055}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tencent-funny-number", "Tencent-funny-number\Tencent-funny-number.vcxproj", "{DCA7E218-5A0A-4D66-9B0F-79E518EF1874}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +23,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{564AF022-D41F-4679-8F7A-779931BFECF6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{564AF022-D41F-4679-8F7A-779931BFECF6}.Debug|Win32.Build.0 = Debug|Win32
-		{564AF022-D41F-4679-8F7A-779931BFECF6}.Release|Win32.ActiveCfg = Release|Win32
-		{564AF022-D41F-4679-8F7A-779931BFECF6}.Release|Win32.Build.0 = Release|Win32
 		{9EF113B4-7059-4733-AF26-03325591128B}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9EF113B4-7059-4733-AF26-03325591128B}.Debug|Win32.Build.0 = Debug|Win32
 		{9EF113B4-7059-4733-AF26-03325591128B}.Release|Win32.ActiveCfg = Release|Win32
@@ -27,8 +31,31 @@ Global
 		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Debug|Win32.Build.0 = Debug|Win32
 		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Release|Win32.ActiveCfg = Release|Win32
 		{8BC2BCD1-5A91-451D-8995-B4248DC1B1BC}.Release|Win32.Build.0 = Release|Win32
+		{FC122130-3ECA-4D18-91EB-DA42575C7A4C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC122130-3ECA-4D18-91EB-DA42575C7A4C}.Debug|Win32.Build.0 = Debug|Win32
+		{FC122130-3ECA-4D18-91EB-DA42575C7A4C}.Release|Win32.ActiveCfg = Release|Win32
+		{FC122130-3ECA-4D18-91EB-DA42575C7A4C}.Release|Win32.Build.0 = Release|Win32
+		{8C3E0356-61E6-4610-8FA3-0BFEF585A17B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C3E0356-61E6-4610-8FA3-0BFEF585A17B}.Debug|Win32.Build.0 = Debug|Win32
+		{8C3E0356-61E6-4610-8FA3-0BFEF585A17B}.Release|Win32.ActiveCfg = Release|Win32
+		{8C3E0356-61E6-4610-8FA3-0BFEF585A17B}.Release|Win32.Build.0 = Release|Win32
+		{BA163293-A239-49FB-A1DC-12FD02A04E49}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA163293-A239-49FB-A1DC-12FD02A04E49}.Debug|Win32.Build.0 = Debug|Win32
+		{BA163293-A239-49FB-A1DC-12FD02A04E49}.Release|Win32.ActiveCfg = Release|Win32
+		{BA163293-A239-49FB-A1DC-12FD02A04E49}.Release|Win32.Build.0 = Release|Win32
+		{2BC84FDB-CD60-46A9-A8A0-D2AE541D1055}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BC84FDB-CD60-46A9-A8A0-D2AE541D1055}.Debug|Win32.Build.0 = Debug|Win32
+		{2BC84FDB-CD60-46A9-A8A0-D2AE541D1055}.Release|Win32.ActiveCfg = Release|Win32
+		{2BC84FDB-CD60-46A9-A8A0-D2AE541D1055}.Release|Win32.Build.0 = Release|Win32
+		{DCA7E218-5A0A-4D66-9B0F-79E518EF1874}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCA7E218-5A0A-4D66-9B0F-79E518EF1874}.Debug|Win32.Build.0 = Debug|Win32
+		{DCA7E218-5A0A-4D66-9B0F-79E518EF1874}.Release|Win32.ActiveCfg = Release|Win32
+		{DCA7E218-5A0A-4D66-9B0F-79E518EF1874}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal
