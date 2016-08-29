@@ -5,8 +5,12 @@
 *.suo
 *.user
 *.sln.docstates
+*.vcxproj
+*.vcxproj.filters
 
 # Build results
+
+.vscode/
 
 [Dd]ebug/
 [Rr]elease/
