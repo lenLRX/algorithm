@@ -48,6 +48,7 @@ S1={01},S2={01}，代表编号为0的狂战士的魔法可以克制编号为0和编号为1的天之驱逐者，
 #include <iostream>
 #include <string>
 #include <vector>
+#include <bitset>
 
 using namespace std;
 
@@ -61,9 +62,6 @@ int main(){
 			for (int j = 0; j < str.size(); j++){
 				sets[i].insert(str[j] - '0');
 			}
-
-
-
 		}
 	}
 	return 0;
